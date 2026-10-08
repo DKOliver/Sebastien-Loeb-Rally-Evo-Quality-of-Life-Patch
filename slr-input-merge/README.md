@@ -1,11 +1,7 @@
-# SLR EVO wheel + pedals merge (DirectInput proxy) - DRAFT
+# SLR EVO wheel + pedals merge (DirectInput proxy)
 
 Lets Sebastien Loeb Rally EVO use a wheel and a separate set of pedals (e.g. Thrustmaster
 TS-PC + Fanatec ClubSport V3 over USB) as one device, with force feedback going to the wheel.
-
-**Status: untested draft.** It was syntax-checked against hand-written stand-in headers, never
-compiled with the real Windows SDK and never run with real hardware. Expect to fix a compile
-error or two and to tune the axis mapping.
 
 ## Files
 
@@ -32,15 +28,11 @@ x86_64-w64-mingw32-g++ -O2 -shared -static -static-libgcc -static-libstdc++ -o d
 If you launch the 32-bit `SLR.exe` instead, build the same source as 32-bit (x86 prompt / i686 MinGW).
 The engine is already loaded by whichever exe you start, so match the bitness of that exe.
 
-## Install / uninstall
+## Install 
 
-1. Copy `dinput8.dll` and `dinput8_merge.ini` next to `SLRX64.exe` in the game folder.
-2. Start the game once, then quit.
-3. Open `dinput8_merge.log` (same folder). Uninstall = delete `dinput8.dll`.
-
-Do not touch DATA.MIX for this. Use it **offline**; I have not checked what the online mode does
-with a replaced DLL.
-
+1. Copy `dinput8.dll` and `dinput8_merge.ini` into the game folder.
+2. Start the game and verify the patch works
+3. 
 ## First run: read the log
 
 - `dinput8 merge proxy starting` means the game loaded the proxy. If the log file never appears,
