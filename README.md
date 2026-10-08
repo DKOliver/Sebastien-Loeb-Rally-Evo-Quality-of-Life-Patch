@@ -22,7 +22,9 @@ Enable Speedometer in cockpit view
 
 Prerequisites:
 Close the game before replacing CarShared or DATA.mix
+
 You need any version of Python 3 installed on your computer
+
 All python scripts should be placed in the games root folder SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO
 
 Step By Step Guide: 
