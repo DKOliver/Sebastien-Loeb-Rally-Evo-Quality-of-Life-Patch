@@ -30,9 +30,7 @@ Download the Patreon mod https://www.patreon.com/LezaKim/posts/sebastien-loeb-13
 
 The mod comes with two files DATA.mix and CarShared.mix. The only file we will use is CarShared.mix
 
-The files go in the SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO Folder
-
-CarShared.mix goes in Sébastien Loeb Rally EVO\Cars
+CarShared.mix goes in the SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO Folder\Cars folder
 
 Take a backup of the old file before replacing
 
