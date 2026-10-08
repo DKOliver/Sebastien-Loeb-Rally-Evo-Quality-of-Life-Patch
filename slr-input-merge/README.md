@@ -83,19 +83,6 @@ button 7 (pause). With `Debug=1` the log prints `wheel button N DOWN` for each w
 you press, which tells you which number to use for `Wheel:N`. The in-game label stays "BUTT 7";
 only the behaviour changes.
 
-## Changing the cockpit field of view (fovpatch.py)
-
-`fovpatch.py` edits the cockpit camera values directly inside DATA.MIX, no ReMixer needed.
-It needs Python 3 (python.org). Close the game, then, in a command prompt in the game folder:
-
-```
-python fovpatch.py 70
-```
-
-A backup `DATA.MIX.bak` is made the first time. `python fovpatch.py 55` puts the original value back
-(the result is byte-identical to the original). Optional: `--file CAMERAS\\BONNETCAMERAS.BML` patches a
-different camera file. The `[Fov]` live hotkeys in the .ini are experimental and off by default.
-
 ## Known limits and things most likely to need work
 
 - Only `IDirectInput8W` is wrapped (that's what the engine references in code). Other interfaces
