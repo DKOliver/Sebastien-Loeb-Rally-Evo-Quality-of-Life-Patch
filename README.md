@@ -1,10 +1,10 @@
-SLRE QOL PATCH
+<h1>SLRE QOL PATCH</h1>
 
 *Majority of this was made with Claude to speed up automation of added values because they have to be added individually to every car, and adding support for multi input devices* but has been tested on my machine with my hardware. 
 
 WARNING: Changing DATA.mix means that Online Multiplayer does not work, so if you want the Online Multiplayer Steam Achievements you need to run the original DATA.mix You will also get a error everytime you finish a stage that it cannot upload the time.
 
-QOL Patch Contents: 
+<h3>QOL Patch Contents:</h3> 
 
 Windshield Fixes at night (LEZA MOD)
 
@@ -20,7 +20,7 @@ Clutch setting actually enforcing the use of a clutch
 
 Enable Speedometer in cockpit view
 
-Prerequisites:
+<h3>Prerequisites:</h3> 
 
 Close the game before replacing CarShared or DATA.mix
 
@@ -28,9 +28,9 @@ You need any version of Python 3 installed on your computer
 
 All python scripts should be placed in the games root folder SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO
 
-Step By Step Guide: 
+<h3>Step By Step Guide:</h3> 
 
-*Windshield Fixes at night(LEZA MOD)*
+<h4>*Windshield Fixes at night(LEZA MOD)*</h4>
 
 For context after Milestone added Chinese language support, the windshield for some reason turned very pixelated at night, and was never fixed. This updated CarShared.mix files restores the pre-patch windshield.
 
@@ -42,7 +42,7 @@ CarShared.mix goes in the SteamLibrary\steamapps\common\Sébastien Loeb Rally EV
 
 Take a backup of the old file before replacing
 
-*POV Centering for Cockpit Camera and Dashboard cam*
+<h4>*POV Centering for Cockpit Camera and Dashboard cam*</h4>
 
 Replace the default DATA.mix in the SLRE Steam folder with the one provided by this mod. This centers all the cameras to the center on both the Cockpit and Dashboard view (Defined as Sim view in the games files)
 
@@ -52,7 +52,7 @@ The mod also provides the python sript Campatch.py where you can change the valu
 
 There are some cars that might appear slightly off center, they actually aren't the camera is perfectly centered it's just the steering wheel itself that's slightly off center. (Italian programming amirite)
 
-*Remove Steering Wheel + Hands*
+<h4>*Remove Steering Wheel + Hands*</h4>
 
 Removes the visible hands/wheel animation
 
@@ -82,7 +82,7 @@ Writing steering wheel visibility list ...
 
 Done. Driver/hands and steering wheel hidden.
 
-*FOV Changer*
+<h4>*FOV Changer*</h4>
 
 Changes the FOV in the Cockpit camera with option to change FOV in the dashboard view
 
@@ -106,7 +106,7 @@ The backup file contains the old values
 
 Start the game up and the FOV should be changed
 
-*Multiple Inputs*
+<h4>*Multiple Inputs*</h4>
 
 Take the files
 
@@ -126,7 +126,7 @@ The game will then spoof your wheel/pedal set as a T300RS. The default is set fo
 
 I cannot guarantee this will work with every wheel/pedal set out there, but it's very easy to debug this with Claude if you run into problems
 
-*Clutch working as intended & enable speedometer in cockpit view*
+<h4>*Clutch working as intended & enable speedometer in cockpit view*</h4>
 
 SLRE has always had a bindable clutch, but it was never required to shift even with the "H With Clutch" option selected in the game. This script fixes that, also allows you to enable clutch for the Manual setting that's made for sequential shifters. It replaces your SLRX64.exe with a new one + creates a backup
 
@@ -150,7 +150,7 @@ py slrexe.py --threshold 0.5 (default = 0.25, allows you to adjust how much peda
 
 py slrexe.py --undo (everything off, original game code)
 
-*Extra tips for SLRE*
+<h3>*Extra tips for SLRE*</h3> 
 
 Open the folder Sébastien Loeb Rally EVO\Movies
 
@@ -160,7 +160,7 @@ To remove input lag disable V-Sync in the games launcher, but use external softw
 
 Set wheel rotation to 900 in your wheels software, but 540 ingame. This will give you the correct steering angle.
 
-Further development:
+<h3>Further development:</h3> 
 
 I'd imagine with reverse engineering of the game with Claude Code, VR could be added to the game, and you could have a live FOV changer while the game is running, but since i do not own a VR headset, or am planning on paying for a Claude Code subscription i'm not gonna pursue this.
 
@@ -170,7 +170,7 @@ If you need help or want other changes, the fastest way to get Claude to do it i
 
 You can use this tool https://www.overtake.gg/downloads/mixfile-remixer.11107/ to unpack the data.mix and then zip it so you can upload it as one file to Claude.
 
-Credit: 
+<h3>Credits:</h3>
 
 MixFile ReMixer by LeMic: https://www.overtake.gg/downloads/mixfile-remixer.11107/
 
