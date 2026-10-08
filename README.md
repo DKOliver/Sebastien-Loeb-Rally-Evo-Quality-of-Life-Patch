@@ -1,4 +1,4 @@
-<h1>SLRE QOL PATCH</h1>
+<h1>Sébastien Loeb Rally Evo - Quality of Life Patch</h1>
 
 *Majority of this was made with Claude to speed up automation of added values because they have to be added individually to every car, and adding support for multi input devices* but has been tested on my machine with my hardware. 
 
