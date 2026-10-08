@@ -21,6 +21,7 @@ Clutch setting actually enforcing the use of a clutch
 Enable Speedometer in cockpit view
 
 Prerequisites:
+
 Close the game before replacing CarShared or DATA.mix
 
 You need any version of Python 3 installed on your computer
