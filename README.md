@@ -5,12 +5,19 @@ SLRE QOL PATCH
 WARNING: Changing DATA.mix means that Online Multiplayer does not work, so if you want the Online Multiplayer Steam Achievements you need to run the original DATA.mix You will also get a error everytime you finish a stage that it cannot upload the time.
 
 QOL Patch Contents: 
+
 Windshield Fixes at night (LEZA MOD)
+
 POV Centering for Cockpit Camera and Dashboard cam
+
 Remove Steering Wheel + Hands
+
 FOV Changer
+
 Multiple Inputs working
+
 Clutch setting actually enforcing the use of a clutch
+
 Enable Speedometer in cockpit view
 
 Step By Step Guide: 
