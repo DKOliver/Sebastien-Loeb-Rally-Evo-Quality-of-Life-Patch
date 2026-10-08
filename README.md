@@ -20,6 +20,11 @@ Clutch setting actually enforcing the use of a clutch
 
 Enable Speedometer in cockpit view
 
+Prerequisites:
+Close the game before replacing CarShared or DATA.mix
+You need any version of Python 3 installed on your computer
+All python scripts should be placed in the games root folder SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO
+
 Step By Step Guide: 
 
 *Windshield Fixes at night(LEZA MOD)*
@@ -48,15 +53,7 @@ There are some cars that might appear slightly off center, they actually aren't 
 
 Removes the visible hands/wheel animation
 
-You need PYTHON 3.x version installed
-
-Take the file hidecockpit.py
-
-Place in game directory root
-
-Open CMD
-
-Change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive replace with letter your game is installed on, then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
+Open CMD and change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive (replace with letter your game is installed on) then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
 
 py hidecockpit.py
 
@@ -76,7 +73,7 @@ Backup written: DATA.MIX.bak
 
 Writing steering wheel behaviour ...
 
-  Note: patched data is 832 bytes (slot is 813); storing it at the end of the file instead.
+Note: patched data is 832 bytes (slot is 813); storing it at the end of the file instead.
   
 Writing steering wheel visibility list ...
 
@@ -84,17 +81,9 @@ Done. Driver/hands and steering wheel hidden.
 
 *FOV Changer*
 
-Changes the FOV in the Cockpit camera with option to change fov in the dashboard view
+Changes the FOV in the Cockpit camera with option to change FOV in the dashboard view
 
-You need PYTHON 3.x version installed
-
-Take the file fovpatch.py
-
-Place in game directory root
-
-Open CMD
-
-Change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive replace with letter your game is installed on, then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
+Open CMD, change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive (replace with letter your game is installed on) then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
 
 py fovpatch.py xx (number for example 70. Default is 55) 
 
@@ -113,8 +102,6 @@ If you want to change the FOV of the Dashboard: py fovpatch.py 70 --file CAMERAS
 The backup file contains the old values
 
 Start the game up and the FOV should be changed
-
-It's not possible to do this while the game is running. Requires reverse engineering and this was all done with the free tier of Claude, so if you want to expand on this go ahead.
 
 *Multiple Inputs*
 
@@ -142,15 +129,7 @@ SLRE has always had a bindable clutch, but it was never required to shift even w
 
 Enable speedometer in cockpit view is pretty self explanatory. The speedometer that is shown in every view except cockpit cam is now also shown there. 
 
-You need PYTHON 3.x version installed
-
-Take the file slrexe.py
-
-Place in game directory root
-
-Open CMD
-
-Change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive replace with letter your game is installed on, then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
+Open CMD, change directory to your game directory example: E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO (cmd -> e: to change drive (replace with letter your game is installed on) then cd E:\SteamLibrary\steamapps\common\Sébastien Loeb Rally EVO\Cars)
 
 Now decide on the following commands:
 
@@ -190,7 +169,7 @@ You can use this tool https://www.overtake.gg/downloads/mixfile-remixer.11107/ t
 
 Credit: 
 
-MixFile ReMixer by LeMic: https://www.overtake.gg/downloads/mixfile-remixer.11107/ (this tool is useful for unpacking the games files and seeing what does what)
+MixFile ReMixer by LeMic: https://www.overtake.gg/downloads/mixfile-remixer.11107/
 
 Leza workplace for Windshield Fixes at night (LEZA MOD)
 
